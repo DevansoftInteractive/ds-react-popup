@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    entry : path.join(__dirname, 'src/index.js'),
+    entry : path.join(__dirname, './src/index.js'),
     output : {
         filename : 'index.js',
-        path : path.join(__dirname, 'lib'),
+        path : path.join(__dirname, './lib'),
     },
     module : {
         loaders : [
