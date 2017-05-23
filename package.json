@@ -33,6 +33,6 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "prepublish": "babel src -d lib"
+    "prepublish": "webpack --config webpack.config.publish.js"
   }
 }
