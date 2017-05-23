@@ -7,6 +7,8 @@ module.exports = {
     output : {
         filename : 'index.js',
         path : path.join(__dirname, './lib'),
+        library : 'ds-react-popup',
+        libraryTarget : 'umd'
     },
     module : {
         loaders : [
