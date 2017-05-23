@@ -1,6 +1,6 @@
 {
   "name": "ds-react-popup",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Popup container component for React",
   "license": "MIT",
   "main": "./lib/index.js",
