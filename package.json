@@ -9,6 +9,14 @@
     "popup",
     "react-component"
   ],
+  "homepage": "https://github.com/DevansoftInteractive/ds-react-popup",
+  "bugs": {
+    "url": "https://github.com/DevansoftInteractive/ds-react-popup/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/DevansoftInteractive/ds-react-popup.git"
+  },
   "author": {
     "name": "Przemysław 'Devanist' Lewandowski",
     "email": "devanist@outlook.com"
