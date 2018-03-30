@@ -1,6 +1,6 @@
 {
   "name": "ds-react-popup",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "Popup container component for React",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -22,16 +22,19 @@
     "email": "devanist@outlook.com"
   },
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "prop-types": "15.5.10"
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "prop-types": "^15.6.1",
+    "classnames": "^2.2.5"
   },
   "devDependencies": {
-    "babel-cli": "6.24.1",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.5",
-    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-2": "^6.24.1",
     "babel-preset-react": "^6.11.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-polyfill": "6.26.0",
     "css-loader": "^0.28.2",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.5",
@@ -41,6 +44,6 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "prepublish": "webpack --config webpack.config.publish.js"
+    "prepublish": "webpack -p --config webpack.config.publish.js"
   }
 }
