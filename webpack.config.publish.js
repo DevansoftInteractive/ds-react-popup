@@ -1,9 +1,7 @@
-const webpack = require('webpack');
-const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    entry : path.join(__dirname, './src/index.js'),
+    entry : ["babel-polyfill", path.join(__dirname, './src/index.js')],
     output : {
         filename : 'index.js',
         path : path.join(__dirname, './lib'),
@@ -13,12 +11,16 @@ module.exports = {
     module : {
         loaders : [
             { 
-                test : /\.js$/, 
-                exclude : /node_modules/, 
-                loader : 'babel-loader',
-                query : {
-                    presets : ['react']
-                }
+                test : /\.(js|jsx)$/, 
+                exclude : /node_modules/,
+                use: [
+                    {
+                        loader : 'babel-loader',
+                        query : {
+                            presets : ['react', 'stage-2']
+                        }
+                    }
+                ]
             },
             {test: /\.scss$/, loader: "style-loader!css-loader!sass-loader"},
             {test: /\.(png|jpg|gif)$/, loader: "url-loader"}

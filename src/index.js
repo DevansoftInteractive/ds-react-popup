@@ -1,3 +1,3 @@
-import Popup from './Components/Popup';
+import Popup from './Components/Popup.jsx';
 
 export default Popup;

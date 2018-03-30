@@ -21,7 +21,22 @@ import Popup from 'ds-react-popup'
         </Popup>
     }
 ```
+
+If you wish to style popup, you can override two BEM classes:
+
+`ds-react-popup` - default class for whole popup
+
+`ds-react-popup__close-button` - class for close button
+
+You can also provide your own class via `className` prop.
+
+## Props
+`close` - Function, that will close popup after click on close button
+
+`CloseButton` - React.Component that will replace the default red 'x' button
+
+`withoutCloseButton` - Boolean flag, if false close button won't be rendered. Mind, that you have to provide other way to close popup.
 ## Example
-Just webpack the package and run example index.html from examples/basic.
+Clone the repository, install dependencies with `npm i`. Then, just run `webpack-dev-server` and go to `http://localhost:8080/examples/basic/`
 ## Demos
 Soon.
